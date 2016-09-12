@@ -17,7 +17,11 @@
   },
   "homepage": "https://github.com/zaclem01/full-metal-photography#readme",
   "devDependencies": {
+    "del": "^2.2.2",
     "gulp": "^3.9.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^3.0.4",
+    "gulp-sass": "^2.3.2",
     "gulp-util": "^3.0.7"
   }
 }

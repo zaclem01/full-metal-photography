@@ -1,0 +1,46 @@
+footer {
+    background: gray;
+    color: lightgray;
+    bottom: 0;
+    font-size: 12px;
+    height: $height_footerHeight;
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+    .footer_contact {
+        float: left;
+        font-weight: bold;
+        margin-left: 2%;
+        width: 32%;
+
+        p {
+            margin: 0;
+        }
+    }
+    .footer_social {
+        float: left;
+        font-size: 32px;
+        text-align: center;
+        width: 32%;
+    }
+        .footer_social_icon {
+            cursor: pointer;
+            margin-left: $margin_small;
+            margin-right: $margin_small;
+
+            &:hover {
+                color: white;
+            }
+        }
+    .footer_copyright {
+        float: left;
+        font-weight: bold;
+        margin-right: 2%;
+        text-align: right;
+        width: 32%;
+
+        p {
+            margin: 0;
+        }
+    }

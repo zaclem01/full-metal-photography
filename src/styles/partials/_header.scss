@@ -12,16 +12,24 @@
         background: gray;
         border: 1px solid white;
         border-radius: 2px;
-        margin-left: $margin_large;
+        font-size: inherit;
+        height: 40px;
+        margin-left: $margin_small;
         position: absolute;
         top: 50%; // Center based on top
         transform: translateY(-50%); // Pull back up half of height to center by middle
+        width: 40px;
 
         &:hover {
             cursor: pointer;
         }
+
+        & i {
+            color: white;
+        }
     }
     .topBar_brand {
+        color: white;
         float: right;
         font-family: 'Fondamento', cursive, serif;
         line-height: $height_topBarHeight;
@@ -45,9 +53,18 @@
 
 .sidebar {
     background: gray; // placeholder
+    box-shadow: 10px 5px 5px 0px rgba(0,0,0,0.75);
     color: white; // placeholder
     white-space: nowrap; // Prevent menu items from wrapping when opened/closed
 }
+    .sidebar_header {
+        border-bottom: 2px solid white;
+        border-top: 2px solid white;
+        color: white;
+        font-size: 20px;
+        margin: $margin_large $margin_large 0 $margin_large;
+        padding: $padding_small 0;
+    }
     .sidebar_nav {
         padding: 0;
     }
@@ -80,10 +97,3 @@
                 .subMenu_nav_item {
                     padding: $padding_small/2 0;
                 }
-    .sidebar_header {
-        border-bottom: 2px solid white;
-        border-top: 2px solid white;
-        font-size: 20px;
-        margin: $height_topBarHeight $margin_large 0 $margin_large;
-        padding: $padding_small 0;
-    }

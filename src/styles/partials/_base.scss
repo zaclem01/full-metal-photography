@@ -1,9 +1,10 @@
 @import 'https://fonts.googleapis.com/css?family=Fondamento|Lato';
 
-@import '../modules/_variables';
-
 @import './_normalize';
+@import '../modules/_variables';
+@import '../modules/_utils';
 @import './_header';
+@import './_footer';
 
 body {
     font-family: 'Lato', sans-serif;
@@ -16,6 +17,4 @@ ul {
 .contentWrapper {
     position: relative;
     top: $height_topBarHeight;
-    width: 100%;
-    height: 1000px;
 }

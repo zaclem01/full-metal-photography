@@ -46,6 +46,7 @@
 .sidebar {
     background: gray; // placeholder
     color: white; // placeholder
+    white-space: nowrap; // Prevent menu items from wrapping when opened/closed
 }
     .sidebar_nav {
         padding: 0;

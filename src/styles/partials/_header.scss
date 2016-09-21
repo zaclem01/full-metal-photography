@@ -9,8 +9,13 @@
     top: 0;
 }
     .topBar_menuBtn {
-        line-height: $height_topBarHeight;
+        background: gray;
+        border: 1px solid white;
+        border-radius: 2px;
         margin-left: $margin_large;
+        position: absolute;
+        top: 50%; // Center based on top
+        transform: translateY(-50%); // Pull back up half of height to center by middle
 
         &:hover {
             cursor: pointer;
@@ -18,7 +23,7 @@
     }
     .topBar_brand {
         float: right;
-        font-family: 'Fondamento';
+        font-family: 'Fondamento', cursive, serif;
         line-height: $height_topBarHeight;
         margin-right: $margin_large;
     }
@@ -33,30 +38,51 @@
 	width: 0;
     z-index: 2; // Higher priority for click events
 
-    &.visible {
+    &.js-visible {
         width: $width_sidebarWidth;
     }
 }
 
 .sidebar {
     background: gray; // placeholder
+    color: white; // placeholder
 }
-    .sidebar_closeBtn {
-        float: right;
-        margin: $margin_small $margin_small 0 0;
-    }
     .sidebar_nav {
-        list-style: none;
         padding: 0;
     }
         .sidebar_nav_item {
-            padding: 0 0 $padding_small $padding_large;
+            padding: $padding_small 0 $padding_small $padding_large;
+
+            &:hover {
+                background: white;
+                a {
+                    color: gray;
+                }
+            }
 
             a {
-                color: white; // placeholder
+                color: white;
                 text-decoration: none;
             }
         }
+            .nav_item_subMenu {
+                transition: all 0.2s ease;
+                
+                &.js-hidden {
+                    display: none;
+                }
+
+                &.js-visible {
+                    display: block;
+                }
+            }
+                .subMenu_nav_item {
+                    padding: $padding_small/2 0;
+                }
     .sidebar_header {
-        padding: $padding_small $padding_large;
+        border-bottom: 2px solid white;
+        border-top: 2px solid white;
+        font-size: 20px;
+        margin: $height_topBarHeight $margin_large 0 $margin_large;
+        padding: $padding_small 0;
     }

@@ -1,16 +1,28 @@
 div.topBar
-    i.fa.fa-bars.topBar_menuBtn
+    button.topBar_menuBtn.js-menuBtn #[i.fa.fa-bars]
     a.topBar_brand Fullmetal Photography
 nav.sidebarWrapper.sidebar
     header.sidebar_header Menu
     ul.sidebar_nav
         li.sidebar_nav_item 
             a(href="#") Home
+        li.sidebar_nav_item.js-subMenu
+            a(href="#") Services #[i.fa.fa-caret-down]
+            div.nav_item_subMenu.js-hidden
+                ul.subMenu_nav
+                    li.subMenu_nav_item
+                        a(href="#") Weddings
+                    li.subMenu_nav_item
+                        a(href="#") Baby Showers
+                    li.subMenu_nav_item
+                        a(href="#") Graduation
+                    li.subMenu_nav_item
+                        a(href="#") Boudoir
         li.sidebar_nav_item 
-            a(href="#") Home
+            a(href="#") Schedule a shoot
         li.sidebar_nav_item 
-            a(href="#") Home
+            a(href="#") Customer Access
         li.sidebar_nav_item 
-            a(href="#") Home
+            a(href="#") About
         li.sidebar_nav_item 
-            a(href="#") Home
+            a(href="#") Contact

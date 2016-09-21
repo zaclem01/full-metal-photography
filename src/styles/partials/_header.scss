@@ -1,0 +1,62 @@
+.topBar {
+    background: gray;
+    color: white;
+    font-size: 24px;
+    height: $height_topBarHeight;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+    .topBar_menuBtn {
+        line-height: $height_topBarHeight;
+        margin-left: $margin_large;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .topBar_brand {
+        float: right;
+        font-family: 'Fondamento';
+        line-height: $height_topBarHeight;
+        margin-right: $margin_large;
+    }
+
+.sidebarWrapper {
+	height: 100%;
+	left: 0;
+	position: fixed;
+	overflow-x: hidden;
+	top: 0;
+	transition: all 0.2s ease;
+	width: 0;
+    z-index: 2; // Higher priority for click events
+
+    &.visible {
+        width: $width_sidebarWidth;
+    }
+}
+
+.sidebar {
+    background: gray; // placeholder
+}
+    .sidebar_closeBtn {
+        float: right;
+        margin: $margin_small $margin_small 0 0;
+    }
+    .sidebar_nav {
+        list-style: none;
+        padding: 0;
+    }
+        .sidebar_nav_item {
+            padding: 0 0 $padding_small $padding_large;
+
+            a {
+                color: white; // placeholder
+                text-decoration: none;
+            }
+        }
+    .sidebar_header {
+        padding: $padding_small $padding_large;
+    }

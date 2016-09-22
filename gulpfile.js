@@ -14,6 +14,7 @@ const sass = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
 const babelify = require('babelify');
+const imagemin = require('gulp-imagemin');
 
 // Bundling
 const browserify = require('browserify');
@@ -22,6 +23,7 @@ const PATHS = {
     sass: 'src/styles',
     pug: 'src/views',
     js: 'src/scripts',
+    images: 'src/images',
     dist: 'dist'
 }
 
@@ -44,6 +46,13 @@ gulp.task('sass', () => {
         .pipe(gulp.dest(PATHS.dist));
 });
 
+gulp.task('images', () => {
+    return gulp.src(path.join(PATHS.images, '*'))
+            .pipe(plumber())
+            .pipe(imagemin())
+        .pipe(gulp.dest(PATHS.dist));
+});
+
 gulp.task('bundle', () => {
     return browserify({ entries: './src/scripts/index.js' })
         .transform(babelify, { presets: ['es2015'] })
@@ -52,7 +61,7 @@ gulp.task('bundle', () => {
         .pipe(gulp.dest('dist'));
 });
 
-gulp.task('build', ['clean', 'pug', 'sass', 'bundle']);
+gulp.task('build', ['clean', 'pug', 'sass', 'bundle', 'images']);
 
 gulp.task('watch', ['build'], () => {
     gulp.watch(path.join(PATHS.sass, '**', '*.scss'), ['sass']);

@@ -1,16 +1,19 @@
+
+/* Footer
+   ========================================================================== */
+
 footer {
-    background: gray;
-    color: lightgray;
+    background: $color_lightGray;
+    color: $color_maroon;
     bottom: 0;
     font-size: 12px;
     height: $height_footerHeight;
     left: 0;
-    position: absolute;
+    position: relative;
     right: 0;
 }
     .footer_contact {
         float: left;
-        font-weight: bold;
         margin-left: 2%;
         width: 32%;
 
@@ -19,6 +22,7 @@ footer {
         }
     }
     .footer_social {
+        color: $color_white;
         float: left;
         font-size: 32px;
         text-align: center;
@@ -35,7 +39,6 @@ footer {
         }
     .footer_copyright {
         float: left;
-        font-weight: bold;
         margin-right: 2%;
         text-align: right;
         width: 32%;

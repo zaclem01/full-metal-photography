@@ -1,10 +1,13 @@
-@import 'https://fonts.googleapis.com/css?family=Fondamento|Lato';
 
-@import './_normalize';
-@import '../modules/_variables';
-@import '../modules/_utils';
-@import './_header';
-@import './_footer';
+/* Base
+   ========================================================================== */
+/**
+ * General site wide-styles.
+ * Content wrapper is everything besides header and footer partials.
+ * Header and footer imports since they will be present on every page.
+ */
+
+@import 'https://fonts.googleapis.com/css?family=Fondamento|Lato';
 
 body {
     font-family: 'Lato', sans-serif;
@@ -15,6 +18,14 @@ ul {
 }
 
 .contentWrapper {
+    padding-bottom: $height_footerHeight;
     position: relative;
     top: $height_topBarHeight;
+
+    & p:first-child {
+        margin-top: 0;
+    }
 }
+
+@import './_header';
+@import './_footer';

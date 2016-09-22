@@ -1,1 +1,19 @@
+@import './modules/_normalize';
+
+/* ==========================================================================
+   Fullmetal Photography styles
+   ========================================================================== */
+
+/* Imports for individual pages
+   ========================================================================== */
+/**
+ * Entry point for entire site css.
+ * Variables and utilities are first imported.
+ * All pages are based on the _base template.
+ * Individual page styles follow after the _base.
+ */
+@import './modules/_variables';
+@import './modules/_utils';
+
 @import './partials/_base';
+@import './home'

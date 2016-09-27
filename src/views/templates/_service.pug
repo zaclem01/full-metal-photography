@@ -1,0 +1,23 @@
+extends ./_base
+
+block content
+    div.service_hero
+        div.service_hero_overlay
+            h1.overlay_title.u-vertCenter
+                block serviceName
+        block serviceHero
+    div.service_desc
+        section.service_desc_blurb
+            h2.blurb_title
+                block serviceDescTitle
+            p.blurb_content
+                block serviceDescContent
+            a.blurb_scheduleBtn(href="#") Schedule your session
+        aside.service_desc_price
+            h2.price_title Price & Availability
+            ul.price_list
+                block priceList
+    section.service_gal
+        block galleryPhotos
+        a.service_gal_findBtn(href="#") Find your gallery
+        

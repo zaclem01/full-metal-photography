@@ -1,0 +1,25 @@
+.home_hero {
+    display: flex;
+    width: $width_full;
+}
+    .home_hero_img {
+        flex: 0 1 calc(100% / 3);
+
+        img {
+            width: $width_full;
+        }
+    }
+
+.home_introBlurb {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 640px) {
+    .home_hero {
+        flex-wrap: wrap;
+    }
+        .home_hero_img {
+            flex: 0 1 100%;
+        }
+}

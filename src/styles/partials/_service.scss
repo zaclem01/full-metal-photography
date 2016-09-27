@@ -1,0 +1,39 @@
+.service_hero {
+    height: 90vh;
+    position: relative;
+    width: $width_full;
+}
+    .service_hero_overlay {
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        width: $width_full;
+    }
+        .overlay_title {
+            color: $color_white;
+            font-family: 'Fondamento';
+            font-size: 6em;
+            margin: 0;
+            z-index: 2;
+        }
+
+.service_desc {
+    display: flex;
+    width: $width_full;
+    justify-content: space-between;
+}
+    .service_desc_blurb {
+        flex: 0 1 70%;
+    }
+    .service_desc_price {
+        background: $color_darkGray;
+        color: $color_white;
+        flex: 0 1 25%;
+        padding-left: $padding_large;
+    }
+
+@media screen and (max-width: 640px) {
+    .overlay_title {
+        font-size: 4em;
+    }
+}

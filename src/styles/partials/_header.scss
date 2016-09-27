@@ -14,7 +14,7 @@
     position: fixed;
     right: 0;
     top: 0;
-    z-index: 2;
+    z-index: 8;
 }
     .topBar_menuBtn {
         background: $color_lightGray;
@@ -70,7 +70,7 @@
 	top: 0;
 	transition: all 0.2s ease;
 	width: 0;
-    z-index: 3; // Higher priority for click events
+    z-index: 9; // Higher priority for click events
 
     &.js-visible {
         width: $width_sidebarWidth;
@@ -86,7 +86,7 @@
     .sidebar_header {
         border-bottom: 2px solid $color_white;
         border-top: 2px solid $color_white;
-        color: $color_maroon;
+        color: $color_white;
         font-size: 20px;
         margin: $margin_large $margin_large 0 $margin_large;
         padding: $padding_small 0;

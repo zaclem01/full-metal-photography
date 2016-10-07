@@ -6,7 +6,7 @@
  */
 
 .topBar {
-    background: $color_lightGray;
+    background: $color_darkGray;
     color: $color_white;
     font-size: 24px;
     height: $height_topBarHeight;
@@ -17,7 +17,7 @@
     z-index: 8;
 }
     .topBar_menuBtn {
-        background: $color_lightGray;
+        background: $color_darkGray;
         border: 1px solid $color_white;
         border-radius: 2px;
         font-size: inherit;
@@ -49,9 +49,16 @@
         color: $color_white;
         float: right;
         font-family: 'Fondamento', cursive, serif;
+        font-size: 1.5em;
         line-height: $height_topBarHeight;
         margin-right: $margin_large;
     }
+
+@media screen and (max-width: 640px) {
+    .topBar_brand {
+        font-size: 1em;
+    }
+}
 
 
 /* Sidebar Menu
@@ -104,9 +111,13 @@
                 }
             }
 
+            // Use parent width and height so entire area is clickable
             a {
                 color: $color_white;
+                display: block;
+                height: inherit;
                 text-decoration: none;
+                width: $width_full;
             }
         }
             .nav_item_subMenu {

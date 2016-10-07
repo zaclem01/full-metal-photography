@@ -1,3 +1,12 @@
+/*
+Theme Name: Fullmetal
+Theme URI: Your Theme's URI
+Description: A theme created for Fullmetal Photography
+Version: 1.0
+Author: Zac Clemans
+Author URI: zaclem01.github.io
+*/
+
 @import './modules/_normalize';
 
 /* ==========================================================================
@@ -19,3 +28,7 @@
 @import './partials/_service';
 @import './_home';
 @import './_wedding';
+@import './_baby-shower';
+@import './_graduation';
+@import './_boudoir';
+@import './guides';

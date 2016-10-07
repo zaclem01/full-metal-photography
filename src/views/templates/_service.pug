@@ -6,18 +6,29 @@ block content
             h1.overlay_title.u-vertCenter
                 block serviceName
         block serviceHero
-    div.service_desc
-        section.service_desc_blurb
-            h2.blurb_title
+    section.service_desc
+        div.service_desc_content
+            h2.desc_content_title
                 block serviceDescTitle
-            p.blurb_content
+            p.desc_content_about
                 block serviceDescContent
-            a.blurb_scheduleBtn(href="#") Schedule your session
-        aside.service_desc_price
-            h2.price_title Price & Availability
-            ul.price_list
-                block priceList
-    section.service_gal
-        block galleryPhotos
-        a.service_gal_findBtn(href="#") Find your gallery
+            a.u-btnSkin.desc_content_scheduleBtn(id="Setmore_button_iframe", href="https://my.setmore.com/bookingpage/991c5eed-9e11-4704-9a9b-3b5305b09cb1") Schedule your session
+        div.service_desc_gal
+            block gallery
+    section.service_prices
+        div.service_prices_package
+            h2.prices_package_title
+                block packageOneTitle
+            ul.prices_package_list
+                block packageOneOptions
+        div.service_prices_package
+            h2.prices_package_title
+                block packageTwoTitle
+            ul.prices_package_list
+                block packageTwoOptions
+        div.service_prices_package
+            h2.prices_package_title
+                block packageThreeTitle
+            ul.prices_package_list
+                block packageThreeOptions
         

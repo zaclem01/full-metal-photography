@@ -14,26 +14,84 @@
             font-family: 'Fondamento';
             font-size: 6em;
             margin: 0;
+            opacity: 0.8;
             z-index: 2;
         }
 
 .service_desc {
+    align-items: center;
+    color: $color_lightGray;
     display: flex;
-    width: $width_full;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin: 10vh $margin_large;
 }
-    .service_desc_blurb {
-        flex: 0 1 70%;
+    .service_desc_content {
+        flex: 0 1 55%;
     }
-    .service_desc_price {
-        background: $color_darkGray;
-        color: $color_white;
+    .service_desc_gal {
+        flex: 0 1 35%;
+        height: 40vh;
+    }
+        .desc_content_scheduleBtn {
+            width: 30%;
+        }
+.service_prices {
+    background: $color_lightGray;
+    color: $color_white;
+    display: flex;
+    justify-content: space-between;
+    padding: ($padding_large * 3) $padding_large;
+}
+    .service_prices_package {
+        background: $color_medGray;
+        box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
         flex: 0 1 25%;
-        padding-left: $padding_large;
+        padding: $padding_large;
+    }
+        .prices_package_title {
+            margin: 0;
+        }
+        .prices_package_list {
+            border-left: 2px solid $color_white;
+            padding-left: $padding_small;
+
+            li {
+            margin-top: $margin_large;
+
+            &:first-child {
+                font-size: 1.2em;
+                font-weight: bold;
+                margin-top: 0;
+            } 
+            }
+        }
+
+.service_gal {
+    margin: 10vh 0;
+}
+    .service_gal_findBtn {
+        width: 30%;
     }
 
 @media screen and (max-width: 640px) {
     .overlay_title {
         font-size: 4em;
     }
+
+    .service_desc {
+        margin: 10vh $margin_small;
+    }
+        .service_desc_scheduleBtn {
+            width: 100%;
+        }
+
+    .service_prices {
+        background: $color_white;
+        flex-wrap: wrap;
+        padding: $padding_large 0;
+    }
+        .service_prices_package {
+            flex: 0 1 100%;
+            margin-bottom: 5vh;
+        }
 }

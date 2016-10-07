@@ -18,7 +18,8 @@ ul {
 }
 
 .contentWrapper {
-    padding-bottom: $height_footerHeight;
+    // Compensate for the height moved down from the top
+    padding-bottom: $height_topBarHeight;
     position: relative;
     top: $height_topBarHeight;
 

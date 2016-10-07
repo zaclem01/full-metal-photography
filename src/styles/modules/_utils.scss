@@ -5,6 +5,28 @@
  * Classes with one purpose only used for utility
  */
 
+.u-btnSkin {
+    background: $color_maroon;
+    color: $color_white;
+    font-family: 'Fondamento';
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.u-heroSkin {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    filter: brightness(60%);
+    height: 100%;
+    width: inherit;
+}
+
 .u-vertCenter {
     position: relative;
     top: 50%;

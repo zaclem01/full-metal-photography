@@ -3,11 +3,87 @@ extends ./templates/_base
 block content
     div.home_hero
         div.home_hero_img
-            img(src="placeholder-portrait.png")
+            img(src="home-placeholder.jpg")
+            div.u-vertCenter.hero_img_overlay
+                h1 Test
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
         div.home_hero_img
-            img(src="placeholder-portrait.png")
+            img(src="home-placeholder.jpg")
+            div.u-vertCenter.hero_img_overlay
+                h1 Test
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
         div.home_hero_img
-            img(src="placeholder-portrait.png")
-    section.home_introBlurb
-        h1.introBlurb_title Some intro
-        p.introBlurb_content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec.
+            img(src="home-placeholder.jpg")
+            div.u-vertCenter.hero_img_overlay
+                h1 Test
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
+    section.home_blurbs
+        div.home_blurbs_section
+            i.fa.fa-camera
+            hr
+            p 
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. 
+                | Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+                | Something about the type of photos that you take and the services that you offer?
+        div.home_blurbs_section
+            i.fa.fa-pencil
+            hr
+            p 
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. 
+                | Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+                | Something about editing and the formats you offer?
+        div.home_blurbs_section
+            i.fa.fa-credit-card-alt
+            hr
+            p 
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. 
+                | Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+                | Highlight how affordable but quality your services are?
+    section.home_intro
+        div.home_intro_about
+            h1 Some intro
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec.
+        //- div.home_intro_video
+        iframe.home_intro_video(width="560", height="315", 
+                src="https://www.youtube.com/embed/-XccUMOQ978?showinfo=0&modestbranding=1&theme=light&rel=0", 
+                frameborder="0", allowfullscreen)
+    h1.home_testimonialsHeader Testimonials
+    section.home_testimonials
+        div.home_testimonials_section
+            i.fa.fa-quote-right
+            hr
+            p.testimonials_section_quote
+                | Fullmetal Photography did my wedding on 8/13/16 and I cant say enough about how wonderful they are! 
+                | I cant wait to see my pictures and I would recommend them to anyone looking for a photography session!
+            p.testimonials_section_author Krystal, Bride
+            p.testimonials_section_location Louisville, KY
+        div.home_testimonials_section
+            i.fa.fa-quote-right
+            hr
+            p.testimonials_section_quote
+                | Todd and Karissa are great to work with. Wonderful people, that do wonderful work! 
+                | We will definitely be coming back for another photo session!
+            p.testimonials_section_author Samantha, Bride
+            p.testimonials_section_location Louisville, KY 
+        div.home_testimonials_section
+            i.fa.fa-quote-right
+            hr
+            p.testimonials_section_quote Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+            p.testimonials_section_author Somebody McPerson, Groom 
+            p.testimonials_section_location Everytown, USA
+        div.home_testimonials_section
+            i.fa.fa-quote-right
+            hr
+            p.testimonials_section_quote Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+            p.testimonials_section_author Human I. Haveaface, Bride
+            p.testimonials_section_location Everytown, USA
+    section.home_contact
+        iframe.home_contact_map(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3137.365785406093!2d-85.80553938428245!3d38.1549376796921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88691180d8d8d21d%3A0xc4d64da7a8a1a9d3!2s2555+Pennacook+Rd%2C+Louisville%2C+KY+40214!5e0!3m2!1sen!2sus!4v1475530046428", frameborder:"0", allowfullscreen)
+        div.home_contact_form
+            h1 Contact Us!
+            input.contact_form_name(type="text", placeholder="Name")
+            input.contact_form_email(type="text", placeholder="Email")
+            textarea.contact_form_message(placeholder="Enter your message here")
+            button.contact_form_submit(type="submit") Submit
+            h2 Or by phone:
+            a.contact_form_phone(href="tel:5022026014") (502) 202-6014

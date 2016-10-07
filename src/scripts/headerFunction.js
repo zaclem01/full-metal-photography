@@ -28,4 +28,12 @@ export default function() {
         $subMenu.toggleClass('js-hidden');
         $subMenu.toggleClass('js-visible');
     });
+
+    // Age gate for Boudoir
+    $('.js-ageGate').click(function(event) {
+        let legalAge = confirm('By click this, you are agreeing that you are age 18 or older. Press OK to proceed to restricted content.');
+        if (!legalAge) {
+            event.preventDefault();
+        }
+    });
 }

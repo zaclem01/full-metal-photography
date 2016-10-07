@@ -5,6 +5,7 @@ const plumber = require('gulp-plumber');
 const del = require('del');
 const source = require('vinyl-source-stream');
 const buffer = require('vinyl-buffer');
+const rename = require('gulp-rename');
 
 const path = require('path');
 
@@ -35,6 +36,9 @@ gulp.task('pug', () => {
     return gulp.src(path.join(PATHS.pug, '*.pug'))
             .pipe(plumber())
             .pipe(pug())
+        // .pipe(gulp.dest(function(file) {
+        //     return path.join(PATHS.dist, 'pages', path.basename(file.path, '.html'));
+        // }));
         .pipe(gulp.dest(PATHS.dist));
 });
 
@@ -67,4 +71,5 @@ gulp.task('watch', ['build'], () => {
     gulp.watch(path.join(PATHS.sass, '**', '*.scss'), ['sass']);
     gulp.watch(path.join(PATHS.pug, '**', '*.pug'), ['pug']);
     gulp.watch(path.join(PATHS.js, '**', '*.js'), ['bundle']);
+    gulp.watch(path.join(PATHS.images, '**'), ['images']);
 });
